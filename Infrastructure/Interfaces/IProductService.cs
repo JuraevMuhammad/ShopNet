@@ -11,6 +11,7 @@ public interface IProductService
     bool DeleteProduct(int id);
     List<Product> SearchProducts(string search);
     List<Product> GetProductsByCategoryId(int categoryId);
-    List<Product> GetProductsBySellerId(string sellerId);
+    List<Product> GetProductsBySellerId(int sellerId);
     List<Product> GetLowStockProducts(int amount = 5);
+    List<Product> GetTopProductsByQuantity(int count = 5);
 }
